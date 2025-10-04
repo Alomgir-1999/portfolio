@@ -119,16 +119,16 @@ a {
   animation: display-text 16s linear infinite; /* display-text animation চলবে */
   animation-delay: calc(-4s * var(--i)); /* প্রতিটি span আলাদা টাইমিং */
 }
-.home-info h2 span::before{ 
-      content: attr(data-text);
-      position: absolute;
-      width: 0%; border-right: 
-      2px solid rgb(255, 17, 0);
-      color: rgb(255, 17, 0);
-      white-space: nowrap; 
-      overflow: hidden; 
-      animation: fill-text 4s linear infinite; }
 
+.home-info h2 span::before{ 
+    content: attr(data-text); 
+    position: absolute; width: 0%; 
+    border-right: 2px solid rgb(255, 17, 0); 
+    color: rgb(255, 17, 0); 
+    white-space: nowrap; 
+    overflow: hidden; 
+    animation: fill-text 4s linear infinite; 
+    animation-delay: calc(-4s * var(--i));}
 .home-info p {
   color: blueviolet; /* প্যারা রঙ */
   font-size: 16px; /* টেক্সট সাইজ */
